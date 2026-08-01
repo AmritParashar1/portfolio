@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Amrit Parashar | Software Engineer</title>
+  <meta name="description"
+    content="Amrit Parashar is a Software Engineer and B.Tech CSE student at BML Munjal University. Building full-stack apps, ML systems, and solving 300+ LeetCode problems." />
+  <meta name="author" content="Amrit Parashar" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Amrit Parashar | Software Engineer" />
+  <meta property="og:description"
+    content="Software Engineer building full-stack apps and ML systems. B.Tech CSE @ BML Munjal University." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&family=Geist+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero section" id="hero">
+      <div class="hero__top reveal">
+        <div class="hero__avatar">
+          <img
+            src="https://imgs.search.brave.com/5ol3rvq9J-xZ_QzGp_qO0JBBJMA_wfpZBp7oSQOuqRQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2ZiLzlk/LzQxL2ZiOWQ0MWU5/NTA2NTU0NzRkYjVl/ZTdjOWIxMjY3M2Y5/LmpwZw"
+            alt="Amrit Parashar" />
+        </div>
+        <div class="hero__info">
+          <h1 class="hero__name">Amrit Parashar </h1>
+          <p class="hero__handle"><a href="https://github.com/AmritParashar1" target="_blank">@AmritParashar1</a></p>
+          <div class="hero__status">
+            <span class="hero__status-item">
+              <span class="hero__status-dot"></span>
+              <span>B.Tech CSE @ BMU</span>
+            </span>
+            <span class="hero__status-separator">·</span>
+            <span class="hero__status-item">📍 Gurugram, India</span>
+            <span class="hero__status-separator">·</span>
+            <span class="hero__status-item">🕐 <span class="clock" id="live-clock">--:--:-- --</span></span>
+          </div>
+        </div>
+      </div>
+
+      <p class="hero__bio reveal">
+        Hey! I'm a <strong>Software Engineer</strong> and CS undergrad at <strong>BML Munjal University</strong>.
+        I build full-stack web apps with <strong>React</strong>, <strong>Node.js</strong>,
+        <strong>Express.js</strong> and <strong>MongoDB</strong>, and dive deep into
+        <strong>Machine Learning</strong> with PyTorch, XGBoost, and time-series models like SARIMA &amp; GARCH.
+        I've solved <strong>300+ problems on LeetCode</strong> with a contest rating of 1625 (top 20.85% globally).
+        I love clean code, great UX, and shipping products that people actually use.
+      </p>
+
+      <!-- Social Cards -->
+      <div class="hero__social-cards reveal">
+        <a href="https://github.com/AmritParashar1" target="_blank" rel="noopener" class="social-card"
+          id="social-github-card">
+          <div class="social-card__icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </div>
+          <div class="social-card__info">
+            <div class="social-card__name">Amrit Parashar</div>
+            <div class="social-card__sub">@AmritParashar1</div>
+          </div>
+          <span class="social-card__action">Follow</span>
+        </a>
+        <a href="https://linkedin.com/in/amrit-parashar" target="_blank" rel="noopener" class="social-card"
+          id="social-linkedin-card">
+          <div class="social-card__icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </div>
+          <div class="social-card__info">
+            <div class="social-card__name">LinkedIn</div>
+            <div class="social-card__sub">Connect with me</div>
+          </div>
+          <span class="social-card__action social-card__action--green">Connect</span>
+        </a>
+      </div>
+
+      <!-- Contact Buttons -->
+      <div class="hero__contact reveal">
+        <a href="mailto:amritwork2012@gmail.com" class="contact-btn" id="btn-email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          Email Me
+        </a>
+        <span class="hero__contact-sep">|</span>
+        <a href="https://github.com/AmritParashar1" target="_blank" class="icon-link" aria-label="GitHub"
+          id="link-github">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/amrit-parashar" target="_blank" class="icon-link" aria-label="LinkedIn"
+          id="link-linkedin">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+        <a href="#" class="icon-link" aria-label="Resume" id="link-resume">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+            <polyline points="10 9 9 9 8 9" />
+          </svg>
+        </a>
+        <a href="tel:+918863846665" class="icon-link" aria-label="Phone" id="link-phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="section" id="skills">
+      <h2 class="section-title reveal">My Skills</h2>
+
+      <div class="skills__track-wrapper reveal">
+        <div class="skills__track" id="skills-track-1">
+          <span class="skill-tag"><span class="skill-tag__icon">🐍</span> Python</span>
+          <span class="skill-tag"><span class="skill-tag__icon">☕</span> Java</span>
+          <span class="skill-tag"><span class="skill-tag__icon">⚡</span> C++</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🟨</span> JavaScript</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🗄️</span> SQL</span>
+          <span class="skill-tag"><span class="skill-tag__icon">⚛️</span> React</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🟢</span> Node.js</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🚂</span> Express.js</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🌐</span> REST APIs</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🔥</span> PyTorch</span>
+          <!-- Duplicated for seamless loop -->
+          <span class="skill-tag"><span class="skill-tag__icon">🐍</span> Python</span>
+          <span class="skill-tag"><span class="skill-tag__icon">☕</span> Java</span>
+          <span class="skill-tag"><span class="skill-tag__icon">⚡</span> C++</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🟨</span> JavaScript</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🗄️</span> SQL</span>
+          <span class="skill-tag"><span class="skill-tag__icon">⚛️</span> React</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🟢</span> Node.js</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🚂</span> Express.js</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🌐</span> REST APIs</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🔥</span> PyTorch</span>
+        </div>
+      </div>
+
+      <div class="skills__track-wrapper reveal">
+        <div class="skills__track skills__track--reverse" id="skills-track-2">
+          <span class="skill-tag"><span class="skill-tag__icon">📊</span> Scikit-learn</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🌲</span> XGBoost</span>
+          <span class="skill-tag"><span class="skill-tag__icon">📈</span> SARIMA</span>
+          <span class="skill-tag"><span class="skill-tag__icon">📉</span> GARCH</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🐼</span> Pandas</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🔢</span> NumPy</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🍃</span> MongoDB</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🐬</span> MySQL</span>
+          <span class="skill-tag"><span class="skill-tag__icon">📦</span> Git</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🧠</span> DSA</span>
+          <!-- Duplicated for seamless loop -->
+          <span class="skill-tag"><span class="skill-tag__icon">📊</span> Scikit-learn</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🌲</span> XGBoost</span>
+          <span class="skill-tag"><span class="skill-tag__icon">📈</span> SARIMA</span>
+          <span class="skill-tag"><span class="skill-tag__icon">📉</span> GARCH</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🐼</span> Pandas</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🔢</span> NumPy</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🍃</span> MongoDB</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🐬</span> MySQL</span>
+          <span class="skill-tag"><span class="skill-tag__icon">📦</span> Git</span>
+          <span class="skill-tag"><span class="skill-tag__icon">🧠</span> DSA</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIENCE ========== -->
+    <section class="section" id="experience">
+      <h2 class="section-title reveal">Work Experience</h2>
+
+      <div class="experience__timeline reveal">
+        <!-- Research Intern -->
+        <div class="exp-entry" id="exp-1">
+          <div class="exp-entry__dot exp-entry__dot--inactive"></div>
+          <div class="exp-entry__header" onclick="toggleExp('exp-1')">
+            <div class="exp-entry__left">
+              <div class="exp-entry__logo">C</div>
+              <div class="exp-entry__title-group">
+                <div class="exp-entry__company">
+                  <a href="#">CADCS</a>
+                  <span class="exp-badge exp-badge--done"><span class="exp-badge__dot"></span> Done</span>
+                </div>
+                <div class="exp-entry__role">Research Intern (Machine Learning)</div>
+              </div>
+            </div>
+            <div class="exp-entry__right">
+              <span class="exp-entry__date">Jun 2025 - Jul 2025</span>
+              <button class="exp-entry__toggle" aria-label="Toggle details">▾</button>
+            </div>
+          </div>
+          <div class="exp-entry__details" id="exp-1-details">
+            <ul>
+              <li>Built an end-to-end EV charging duration prediction system using XGBoost, LSTM and ensemble stacking
+                on 75,000+ sessions</li>
+              <li>Improved baseline MAE by 15–20% through feature engineering across 74 structured and temporal
+                variables</li>
+              <li>Developed a scalable preprocessing pipeline for large scale time-series data</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EDUCATION ========== -->
+    <section class="section" id="education">
+      <h2 class="section-title reveal">Education</h2>
+
+      <div class="experience__timeline reveal">
+        <div class="exp-entry" id="edu-1">
+          <div class="exp-entry__dot"></div>
+          <div class="exp-entry__header">
+            <div class="exp-entry__left">
+              <div class="exp-entry__logo">B</div>
+              <div class="exp-entry__title-group">
+                <div class="exp-entry__company">
+                  BML Munjal University
+                  <span class="exp-badge exp-badge--active"><span class="exp-badge__dot"></span> Active</span>
+                </div>
+                <div class="exp-entry__role">B.Tech in Computer Science &amp; Engineering</div>
+              </div>
+            </div>
+            <div class="exp-entry__right">
+              <span class="exp-entry__date">Aug 2023 - Present</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-entry" id="edu-2">
+          <div class="exp-entry__dot exp-entry__dot--inactive"></div>
+          <div class="exp-entry__header">
+            <div class="exp-entry__left">
+              <div class="exp-entry__logo">I</div>
+              <div class="exp-entry__title-group">
+                <div class="exp-entry__company">
+                  Indraprastha International School
+                  <span class="exp-badge exp-badge--done"><span class="exp-badge__dot"></span> Done</span>
+                </div>
+                <div class="exp-entry__role">Class 12th (PCM)</div>
+              </div>
+            </div>
+            <div class="exp-entry__right">
+              <span class="exp-entry__date">2022 - 2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ACHIEVEMENTS ========== -->
+    <section class="section" id="achievements">
+      <h2 class="section-title reveal">Achievements</h2>
+
+      <div class="exp-entry reveal" style="margin-left: 0;">
+        <div class="exp-entry__header" style="cursor: default;">
+          <div class="exp-entry__left">
+            <div class="exp-entry__logo" style="background: #1a1a0a; color: #eab308;">🏆</div>
+            <div class="exp-entry__title-group">
+              <div class="exp-entry__company">LeetCode — 300+ Problems Solved</div>
+              <div class="exp-entry__role">Contest Rating: 1625 · Top 20.85% globally</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="section" id="projects">
+      <h2 class="section-title reveal">My Projects</h2>
+
+      <!-- Project 1: FragRAG -->
+      <div class="project-card reveal" id="project-1">
+        <div class="project-card__image">
+          <div class="project-card__image-placeholder"
+            style="background: linear-gradient(135deg, #1a0a2e 0%, #2e0a3e 50%, #0a1a28 100%);">
+            <span class="project-icon">🧠</span>
+            <span>FragRAG</span>
+          </div>
+        </div>
+        <div class="project-card__content">
+          <h3 class="project-card__title">FragRAG</h3>
+          <div class="project-card__links">
+            <a href="https://github.com/AmritParashar1/fragrag" target="_blank" class="project-pill">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+          <p class="project-card__desc">
+            AI-powered fragrance recommendation system using RAG. Semantic search over 24,000+ items
+            with BAAI/bge embeddings, cross-encoder reranking, and Google Gemini for grounded,
+            citation-backed conversational recommendations.
+          </p>
+          <div class="project-card__tech-label">Technologies Used:</div>
+          <div class="project-card__tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">ChromaDB</span>
+            <span class="tech-tag">Gemini</span>
+            <span class="tech-tag">RAG</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Financial Dashboard -->
+      <div class="project-card reveal" id="project-2">
+        <div class="project-card__image">
+          <div class="project-card__image-placeholder"
+            style="background: linear-gradient(135deg, #0a1a0a 0%, #0a2e1a 50%, #001428 100%);">
+            <span class="project-icon">📈</span>
+            <span>Nifty 50 Dashboard</span>
+          </div>
+        </div>
+        <div class="project-card__content">
+          <h3 class="project-card__title">Financial Dashboard</h3>
+          <div class="project-card__links">
+            <a href="https://github.com/AmritParashar1/Financial-Dashboard" target="_blank" class="project-pill">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+          <p class="project-card__desc">
+            Volatility forecasting dashboard for NIFTY 50 sector data. Implements SARIMA and GARCH models,
+            stationarity testing (ADF), residual diagnostics, and a time-series cross-validation framework
+            integrated into a Next.js SSR dashboard.
+          </p>
+          <div class="project-card__tech-label">Technologies Used:</div>
+          <div class="project-card__tech">
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">SARIMA</span>
+            <span class="tech-tag">GARCH</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Time-Series</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: InkWell -->
+      <div class="project-card reveal" id="project-3">
+        <div class="project-card__image">
+          <div class="project-card__image-placeholder"
+            style="background: linear-gradient(135deg, #1a0f00 0%, #2d1a00 50%, #0a1628 100%);">
+            <span class="project-icon">✍️</span>
+            <span>InkWell</span>
+          </div>
+        </div>
+        <div class="project-card__content">
+          <h3 class="project-card__title">InkWell</h3>
+          <div class="project-card__links">
+            <a href="https://github.com/AmritParashar1/ink-well" target="_blank" class="project-pill">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+          <p class="project-card__desc">
+            Full-stack article publishing platform built with the MERN stack. Features rich text authoring,
+            social networking (follow authors, personalized feed, bookmarks), and a secure REST API with
+            JWT auth and bcryptjs.
+          </p>
+          <div class="project-card__tech-label">Technologies Used:</div>
+          <div class="project-card__tech">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express.js</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">JWT</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://github.com/AmritParashar1" target="_blank" class="more-projects-btn reveal">
+        More Projects <span>→</span>
+      </a>
+    </section>
+
+    <!-- ========== CONNECT ========== -->
+    <section class="section" id="connect">
+      <div class="connect reveal">
+        <h2 class="connect__title">Let's Connect</h2>
+        <p class="connect__sub">Feel free to reach out through any of these platforms</p>
+        <div class="connect__links">
+          <a href="https://github.com/AmritParashar1" target="_blank" class="connect__link" id="connect-github">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+            GitHub
+          </a>
+          <a href="mailto:amritwork2012@gmail.com" class="connect__link" id="connect-email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            Email
+          </a>
+          <a href="#" class="connect__link" id="connect-resume">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+            </svg>
+            Resume
+          </a>
+          <a href="https://linkedin.com/in/amrit-parashar" target="_blank" class="connect__link" id="connect-linkedin">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <p class="footer__quote">"still waters run eternal."</p>
+      <p class="footer__credit">Designed & Made with <span class="heart">❤️</span></p>
+      <div class="footer__bottom">
+        <span>2026. All rights reserved</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
