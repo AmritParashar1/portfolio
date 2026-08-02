@@ -37,7 +37,7 @@
   };
 
   // ── Scroll Reveal ──────────────────────────────────────────
-  const revealEls = document.querySelectorAll('.reveal');
+  const revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
 
   const revealObserver = new IntersectionObserver(
     (entries) => {
@@ -48,7 +48,7 @@
         }
       });
     },
-    { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    { threshold: 0.08, rootMargin: '0px 0px -50px 0px' }
   );
 
   revealEls.forEach((el) => revealObserver.observe(el));
