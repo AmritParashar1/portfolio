@@ -1029,3 +1029,70 @@ ol {
     gap: 0.3rem;
   }
 }
+
+/* ============================================================
+   SIDEBAR INDEX
+   ============================================================ */
+.sidebar-index {
+  position: fixed;
+  top: 50%;
+  right: max(1.5rem, calc((100vw - var(--max-w)) / 2 - 9rem));
+  transform: translateY(-50%);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.sidebar-index__header {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  color: var(--text-dim);
+  padding: 0.5rem 0;
+  border-top: 1px dotted var(--border-light);
+  border-bottom: 1px dotted var(--border-light);
+  margin-bottom: 0.15rem;
+}
+
+.sidebar-index__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-index__list li:last-child .sidebar-index__link {
+  border-bottom: 1px dotted var(--border-light);
+  padding-bottom: 0.55rem;
+}
+
+.sidebar-index__link {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--text-dim);
+  padding: 0.45rem 0;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+  border: none;
+}
+
+.sidebar-index__link:hover {
+  color: var(--text-secondary);
+}
+
+.sidebar-index__link.active {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* Hide sidebar on narrow viewports where there's no room */
+@media (max-width: 1080px) {
+  .sidebar-index {
+    display: none;
+  }
+}
